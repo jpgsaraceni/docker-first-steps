@@ -1,0 +1,5 @@
+app/*
+!app/Dockerfile
+!app/docker-compose.yml
+node_modules
+yarn.lock
