@@ -17,10 +17,6 @@ This is just an example image and this step is not actually necessary for the ne
 `-d` means the container will run in detached mode (in the background).
 `-p 80:80` means port 80 of the host will be mapped on port 80 of the container.
 
-### app dierectory
-
-This app was not written by me, it was downloaded [following the docker docs tutorial](https://docs.docker.com/get-started/02_our_app/). To add it so you can test the docker commands described here, clone or download from its [repo](https://github.com/docker/getting-started/tree/master/app).
-
 ### Dockerfile
 
 This file is what tells docker how to build a container image.
@@ -39,6 +35,10 @@ CMD ["node", "src/index.js"]
 ```
 
 ## 2. Build container image in app directory
+
+### app dierectory
+
+This app was not written by me, it was downloaded [following the docker docs tutorial](https://docs.docker.com/get-started/02_our_app/). To add it so you can test the docker commands described here, clone or download from its [repo](https://github.com/docker/getting-started/tree/master/app).
 
 ```shell
 sudo docker build -t getting-started .
